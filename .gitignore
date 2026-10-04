@@ -1,0 +1,22 @@
+# C object files
+*.o
+
+# Default GCC executable
+a.out
+
+# Build directories
+build/
+bin/
+
+# Core dump files
+core
+core.*
+
+# Editor temporary files
+*~
+*.swp
+*.swo
+
+# IDE settings
+.vscode/
+.idea/

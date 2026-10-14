@@ -99,6 +99,40 @@ void print_primes_between(int low, int high) {
     //   - terminer par un retour à la ligne
 }
 
+void print_primes_sieve(int low, int high){
+    int n = high+1;
+    bool array_boolens[n];
+    
+    
+    for(int i=0; i<n; i++){
+        array_boolens[i]=true;
+        
+    }
+    array_boolens[0]=false;
+    array_boolens[1]=false;
+    
+    for(int i=2; i<n; i++){
+        //printf("Test1");
+        if(array_boolens[i]==true){
+            //printf("Test2: ");
+            for(int j=i*i; j<n; j=j+i){
+                array_boolens[j]=false;
+                //printf("test1: j:%d, i: %d ",j,i);
+            }
+        }
+    }
+    printf("primes*** number :");
+    for(int i=low; i<high; i++){
+        
+        if(array_boolens[i]==true){
+            printf(" %d", i);
+            
+        }
+        
+        
+    }
+}
+
 #ifndef TP4_TEST
 int main(void) {
     printf("=== Exercice 1 ===\n");
@@ -124,6 +158,12 @@ int main(void) {
     } while (input_error);
 
     print_primes_between(low, high);
+    
+    printf("\n=== Exercice BONUS 1 ===\n");
+    
+    print_primes_sieve(low,high);
+    
+    
 
     return EXIT_SUCCESS;
 }

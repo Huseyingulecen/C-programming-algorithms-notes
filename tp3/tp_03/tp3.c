@@ -110,7 +110,6 @@ int ordinateur_devine(int max){
     //// The space before %c skips the newline ('\n') character from the Enter key.
     scanf(" %c",&reponse);
     printf("klavyeden girilen deger %c",reponse);
-    int deneme =1;
     do{
         printf("test1\n");
         switch(reponse){
@@ -164,15 +163,15 @@ int main(void) {
     scanf("%d",&max);
     
     
-    //is_valid_guess(draw_secret_number(max),max);
+    is_valid_guess(draw_secret_number(max),max);
     
-    //printf("Le nombre choisi est %d\n", ordinateur_devine(max));
+    printf("Le nombre choisi est %d\n", ordinateur_devine(max));
     
     
 	// - demander le nombre maximum 
 
-    //play_one_game(max);
-    //printf("test: %d",optimal_attempts(max));
+    mak//play_one_game(max);
+    printf("test: %d",optimal_attempts(max));
 
     return EXIT_SUCCESS;
 }

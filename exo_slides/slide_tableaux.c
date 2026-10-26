@@ -4,13 +4,9 @@
 
 
 
-/*
-Rédigez un algorithme pour calculer la moyenne d’un tableau de notes --> moyenne_tableau 
 
-Trouver la valeur minimale contenue dans un tableau et l'indice de l'élément le plus petit.--> valeur_minimal_et_indice
+//Rédigez un algorithme pour calculer la moyenne d’un tableau de notes --> moyenne_tableau 
 
-Trier un tableau par ordre croissant. --> 
-*/
 
 // moyenne tableau 
 float moyenne_tableau(float notes[], int taille ){
@@ -33,6 +29,11 @@ struct Result {
     int index;
 };
 
+
+
+//Trouver la valeur minimale contenue dans un tableau et l'indice de l'élément le plus petit.--> valeur_minimal_et_indice
+
+
 struct Result valeur_minimal_et_indice(float tableau[], int taille ){
     
     struct Result result ;
@@ -48,7 +49,7 @@ struct Result valeur_minimal_et_indice(float tableau[], int taille ){
     }
     return result;
 }
-// Tableau par ordre croissant 
+// Trier un tableau par ordre croissant. --> trier_croissant 
 
 void trier_croissant (int tableau[], int taille){
     

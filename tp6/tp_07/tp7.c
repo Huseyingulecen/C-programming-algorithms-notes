@@ -129,16 +129,19 @@ void revert(char str1[], char str2[]) {
 bool is_palindrome(char str[]) {
     
     int size = strlen(str);
-    int countdown = size;
-    countdown--;
-    
+    char tampon[size+1];
+    int sizecopy = size;
     for(int i=0; i<size; i++){
-        if(str[i]!=str[countdown]){
-            return false;
-        }
-        countdown--;
+        
+        tampon[i]=str[sizecopy-1];
+        sizecopy--;
+        
     }
+    tampon[size]='\0';
     
+    if(strcmp(tampon,str)!=0){
+        return false;
+    }
     return true;
 }
 

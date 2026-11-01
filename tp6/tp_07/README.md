@@ -110,7 +110,7 @@ comparez l'original et l'inversé.
 
 ## Anagrammes sans tri
 
-Trier les deux chaînes est simple, mais pas très rapide. Une autre
+-Trier les deux chaînes est simple, mais pas très rapide. Une autre
 méthode consiste à compter combien de fois chaque lettre apparaît
 dans chaque chaîne, puis à comparer les deux comptages. Écrivez
 `is_anagram_count(str1, str2)` avec cette méthode. Pour quels mots
